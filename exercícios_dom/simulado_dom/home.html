@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado | JavaScript </title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <div>
+        <h3>Exercício 1</h3>
+        <p>Uma função que capture todos as ps filhas de div e deixe-as com a cor da fonte rosa</p>
+        <button onclick="pPink()">Clique para tornar rosa</button>
+    </div>
+   
+  
+    <div>
+        <h3>Exercício 2</h3>
+        <p>Faça uma função que receba um vetor de objetos da forma (apenas
+            um exemplo)</p>
+        <p>
+            {nome:"Teste",acao:"MOSTRAR"},{nome:"Nome1",acao:"IGNORAR"},{nome:"Nome2",acao:"MOSTRAR"}
+            e imprima no html:
+        </p>
+
+        <ol>
+            <li>Todos os nomes cuja a ação é mostrar englobados por tags p;</li>
+            <li>Quantos nomes foram ignorados englobado em uma div;</li>
+            <li>Total de nomes englobado em um p.</li>
+        </ol>
+        <button onclick="mostrarEmP(dados)" id="buttonNomes">Resolva o 1 do exercício 2</button>
+        <button onclick="ignorados(dados)" id="buttonIgnorados">Resolva o 2 do exercício 2</button>
+        <button onclick="numDePs(dados)" id="buttonMostrados">Resolva o 3 do exercício 2</button>
+    </div>
+
+
+
+
+    
+    <div>
+        <h3>Exercício 3</h3>
+        <p> Implemente a função rolar() que cria uma lista não ordenada (ul-li) contendo
+            números de 0 a n-1, onde n vem do formulário em questão. Os números pares
+            devem ter cor de fonte azul e os ímpares vermelho. Para montar a lista, use
+            apenas funções de inserção do DOM (se sua lista for montada via string a
+            questão valerá 1.0).</p>
+        <p>Considere o formulário:
+
+        </p>
+
+        <form> Número: <input type="number" id="numero">
+        </form> <br>
+        <button onclick="rolar()">Crie a sua lista</button>
+
+    </div>
+
+    <div>
+        <h3>Exercício 4</h3>
+        <p> Implemente uma função nomearImgs() que coloca o src de todos
+            os elementos img como image< i>.png, onde < i> deve ser substituído pelo
+                    índice ao qual lhe é atribuido pelo DOM (primeiro img índice 0 e assim por
+                    diante...).</p>
+    </div>
+</body>
+
+</html>
