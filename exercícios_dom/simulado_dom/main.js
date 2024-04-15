@@ -14,7 +14,7 @@ function mostrarEmP(array){
     for(let i = 0; i<dados.length; i++){
         if(array[i].acao === "MOSTRAR"){
             let p = document.createElement("p");
-            p.innerText = array[i].nome;
+            p.innerHTML = array[i].nome;
             button.appendChild(p)
         }
     }
@@ -29,7 +29,7 @@ function ignorados(array){
         }
     })
     let div = document.createElement("div");
-    div.innerText = ignorados;
+    div.innerHTML = ignorados;
     button.appendChild(div)
 }
 
@@ -48,5 +48,25 @@ function numDePs(array){
 
 //exercicio 3
 function rolar(){
-    let number = document.querySelector("#numero");
+    let number = document.querySelector("#numero").value;
+    let button = document.querySelector("#buttonLista");
+    let ul = document.createElement("ul");
+    for(let i = 0; i < number; i++){
+        let li = document.createElement("li");
+        if(i % 2 === 0){
+            li.style.color = "blue";
+        }
+        else{
+            li.style.color = "red";
+        }
+        li.innerText = i;
+        ul.appendChild(li);
+    }
+    button.appendChild(ul);
 }
+
+//exercicio 4
+function nomearImgs(){
+    
+}
+

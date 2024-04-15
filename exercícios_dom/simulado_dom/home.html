@@ -11,6 +11,7 @@
 
 <body>
    
+    <h2>Simulado JavaScript DOM</h2>
     <div>
         <h3>Exercício 1</h3>
         <p>Uma função que capture todos as ps filhas de div e deixe-as com a cor da fonte rosa</p>
@@ -54,16 +55,17 @@
 
         <form> Número: <input type="number" id="numero">
         </form> <br>
-        <button onclick="rolar()">Crie a sua lista</button>
+        <button onclick="rolar()" id="buttonLista">Crie a sua lista</button>
 
     </div>
 
     <div>
         <h3>Exercício 4</h3>
         <p> Implemente uma função nomearImgs() que coloca o src de todos
-            os elementos img como image< i>.png, onde < i> deve ser substituído pelo
+            os elementos img como image "< i >" .png, onde "< i >" deve ser substituído pelo
                     índice ao qual lhe é atribuido pelo DOM (primeiro img índice 0 e assim por
                     diante...).</p>
+        <button onclick="nomearImgs()"> Clique para mudar o src das imagens </button>
     </div>
 </body>
 
