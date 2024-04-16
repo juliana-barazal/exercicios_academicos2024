@@ -67,6 +67,11 @@ function rolar(){
 
 //exercicio 4
 function nomearImgs(){
-    
+    let imgs = document.querySelectorAll("img");
+    let i = 0;
+    imgs.forEach(img =>{
+        img.alt = "image" + i + ".png";
+        i++;
+    })
 }
 
