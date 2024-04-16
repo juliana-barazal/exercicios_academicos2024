@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquecimento DOM</title>
+    <script src ="/treino_prova/main.js"></script>
+</head>
+<body>
+    <h2>Simulado JavaScript DOM</h2>
+
+    <div>
+        <h3>Exercício 1</h3>
+        <p>Crie uma função que, ao clicar no botão abaixo, altere o texto do parágrafo para "O texto foi alterado com sucesso!"</p>
+        <button onclick="alterarTexto()">Alterar texto</button>
+        <p id="paragrafo1">Este é um parágrafo.</p>
+    </div>
+
+    <div>
+        <h3>Exercício 2</h3>
+        <p>Crie uma função que, ao passar o mouse sobre a imagem abaixo, altere o texto alternativo e a imagem para outra imagem de sua escolha.</p>
+        <img src="imagem1.jpg" alt="Imagem 1" onmouseover="trocarImagem(this)">
+    </div>
+
+    <div>
+        <h3>Exercício 3</h3>
+        <p>Crie uma função que, ao clicar no botão abaixo, adicione um novo item à lista não ordenada com o texto "Novo item".</p>
+        <ul id="listaEx3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <button onclick="adicionarItem()">Adicionar item</button>
+    </div>
+
+    <div>
+        <h3>Exercício 4</h3>
+        <p>Crie uma função que, ao clicar no botão abaixo, altere a cor de fundo do corpo da página para uma cor aleatória.</p>
+        <button onclick="alterarCor()">Alterar cor de fundo</button>
+    </div>
+</body>
+</html>
