@@ -1,3 +1,4 @@
+//simulado para treinar para a prova do 1° bimestre
 //exercício 1
 function pPink(){
     let ps = document.querySelectorAll("div p");
